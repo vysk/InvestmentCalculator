@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './ResultTable.module.css';
 const formatter = new Intl.NumberFormat('en-US', {
   style: 'currency',
   currency: 'USD',
@@ -9,7 +10,7 @@ const formatter = new Intl.NumberFormat('en-US', {
 const ReusableTable = (props) => {
   //console.log(+props.initialInvestment);
   return (
-    <table className='result'>
+    <table className={styles.result}>
       <thead>
         <tr>
           <th>Year</th>
