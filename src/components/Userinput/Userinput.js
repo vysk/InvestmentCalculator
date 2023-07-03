@@ -20,6 +20,7 @@ const UserInput = (props) => {
   };
 
   const inputChangeHandler = (input, value) => {
+    console.log(typeof value, value);
     setuserInput((prevInput) => {
       return {
         ...prevInput,
